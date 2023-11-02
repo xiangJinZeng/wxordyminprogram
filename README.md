@@ -39,6 +39,12 @@
     ├── readme_img 截图展示
     ├── src
     |  ├── apps
+    |  |  ├── mp-toutiao 抖音小程序配置目录
+    |  |  |  ├── dyname1.config.js 注意：dyname1是自定义的一个名称，一般是将抖音小程序中文名转成英文，与根目的run.mjs中的owner一定要对应上
+    |  |  |  ├── dyname2.config.js
+    |  |  ├── mp-weixin 微信小程序配置目录
+    |  |  |  ├── wxname1.config.js
+    |  |  |  ├── wxname2.config.js
     |  ├── config 小程序配置（本地）
     |  ├── pages
     |  |  ├── index

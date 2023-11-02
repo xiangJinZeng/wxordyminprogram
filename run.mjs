@@ -13,6 +13,11 @@ const BUILD_COMMAND = {
   '调试-监视': 'test:watch',
   '构建-打包-压缩': 'build',
 }
+/**
+ * id：小程序appid
+ * label：小程序名
+ * owner：小程序中文转英文名，注意：此一定要与src/apps/mp-weixin/wxname1.config.js中的wxname1保持一致
+ */
 // 微信小程序
 const APPID_MAP_WEIXIN = {
   '微信小程序名称1': { id: 'wxAPPID1',label:'微信小程序名称1',owner: 'wxname1' },
