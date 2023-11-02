@@ -1,0 +1,107 @@
+{
+    "name" : "泰久点餐小程序",
+    "appid" : "__UNI__88DBBBF",
+    "description" : "",
+    "versionName" : "1.0.0",
+    "versionCode" : "100",
+    "transformPx" : false,
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "usingComponents" : true,
+        "nvueStyleCompiler" : "uni-app",
+        "compilerVersion" : 3,
+        "splashscreen" : {
+            "alwaysShowBeforeRender" : true,
+            "waiting" : true,
+            "autoclose" : true,
+            "delay" : 0
+        },
+        /* 模块配置 */
+        "modules" : {},
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "permissions" : [
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {},
+            /* SDK配置 */
+            "sdkConfigs" : {}
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid": "wxAPPID1",
+        // "appid" : "wxc15ed7133a211c92", //知更鸟测试
+        // "appid" : "wx2cd3c935b0b61b35", //泰久点餐测试
+        // "appid" : "wx104ea639dca07a9b", //森林海点餐测试
+        // "appid" : "wxf064496290a49f8e", //冰熊
+        // "appid" : "wx01b0da905aa33ddc", //face测试
+
+        "setting" : {
+            "urlCheck" : false,
+            "minified" : true,
+            "es6" : true
+        },
+        "optimization" : {
+            "subPackages" : true
+        },
+        "usingComponents" : true,
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "将获取你的具体位置信息，用于计算位置距离"
+            }
+        },
+        "requiredPrivateInfos": [
+            "getLocation"
+        ],
+        "condition": {
+            "miniprogram": {
+              "list": [
+                {
+                  "name": "",
+                  "pathName": "pages/activity/pages/goodDetail/goodDetail",
+                  "query": "category_code=SCENIC_TICKET&activityGoodId=1560502370318729216&goods_id=62d948f06ae0774c1318f1f9&type=marquee",
+                  "launchMode": "default",
+                  "scene": null
+                }
+              ]
+            }
+        },
+        "__usePrivacyCheck__": true
+
+    },
+    "mp-alipay" : {
+        "usingComponents" : true
+    },
+    "mp-baidu" : {
+        "usingComponents" : true
+    },
+    "mp-toutiao" : {
+        "appid": "dyAPPID1",
+        "usingComponents" : true
+    },
+    "uniStatistics" : {
+        "enable" : false
+    },
+    "vueVersion" : "2"
+}
