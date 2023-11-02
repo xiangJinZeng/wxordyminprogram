@@ -7,7 +7,8 @@
     "start": "zx run.mjs",
     "dev:watch": "cross-env name=${name} VUE_APP_ENV=${appEnv} VUE_APP_OWNER=${owner} VUE_APP_ID=${appId} UNI_OUTPUT_DIR=${dir} NODE_ENV=development UNI_PLATFORM=${platform} vue-cli-service uni-build --watch",
     "test:watch": "cross-env name=${name} VUE_APP_ENV=${appEnv} VUE_APP_OWNER=${owner} VUE_APP_ID=${appId} UNI_OUTPUT_DIR=${dir} NODE_ENV=production UNI_PLATFORM=${platform} vue-cli-service uni-build --watch",
-    "build": "cross-env name=${name} VUE_APP_ENV=${appEnv} VUE_APP_OWNER=${owner} VUE_APP_ID=${appId} UNI_OUTPUT_DIR=${dir} NODE_ENV=production UNI_PLATFORM=${platform} vue-cli-service uni-build --minimize"
+    "build": "cross-env name=${name} VUE_APP_ENV=${appEnv} VUE_APP_OWNER=${owner} VUE_APP_ID=${appId} UNI_OUTPUT_DIR=${dir} NODE_ENV=production UNI_PLATFORM=${platform} vue-cli-service uni-build --minimize",
+    "wxminci": "cross-env  node ./wxMinCI.js"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -108,6 +109,7 @@
     "lint-staged": "^13.0.3",
     "mini-types": "*",
     "miniprogram-api-typings": "*",
+    "miniprogram-ci": "^1.8.25",
     "node-simctl": "^6.1.0",
     "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
