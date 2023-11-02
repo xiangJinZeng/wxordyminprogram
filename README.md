@@ -1,29 +1,29 @@
-### 一套代码打包多个微信小程序
-### 一套代码打包多个抖音小程序
+## 一套代码打包多个微信小程序
+## 一套代码打包多个抖音小程序
 
-### 简介
+## 简介
 此项目是用来免除手动替换小程序appid的烦恼。有些公司会在开发环境是一个appid，测试，准生产，生产又是另一个appid，避免我们每次手动填写，打包构建，上传的烦恼，最大作用是可以配合自动化构建工具Jenkins等使用
 
-### 强大功能
-## 抖音小程序
--  1、可在本地使用例如：yarn run dyminci version=1.0.1 appid=dyAPPID1 buildenv=production，自动上传，具体看下面的“dyMinCI.js文件使用命令”
-- 新增配合Jenkins自动将项目上传到抖音开放平台功能，主要是利用了tt-ide-cli依赖，可参考（https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/developer-instrument/development-assistance/ide-order-instrument）
-## 微信小程序
+## 强大功能
+### 抖音小程序
+- 1、可在本地使用例如：yarn run dyminci version=1.0.1 appid=dyAPPID1 buildenv=production，自动上传，具体看下面的“dyMinCI.js文件使用命令”
+- 2、新增配合Jenkins自动将项目上传到抖音开放平台功能，主要是利用了tt-ide-cli依赖，可参考（https://developer.open-douyin.com/docs/resource/zh-CN/mini-app/develop/developer-instrument/development-assistance/ide-order-instrument）
+### 微信小程序
 - 1、可在本地使用例如：yarn run wxminci  version=1.0.1 appid=wxAPPID1 buildenv=production，自动上传，具体看下面的“wxMinCI.js文件使用命令”
 - 2、新增配合Jenkins自动将项目上传到微信开放平台功能，主要是利用了miniprogram-ci依赖，可参考（https://developers.weixin.qq.com/miniprogram/dev/devtools/ci.html）
 
-### 安装
+## 安装
 - Node.js 14.19.0以上
 - git
 - Visual Studio Code
 - yarn或者pnpm，因为安装依赖差异问题，最好使用这两种
 
-### 启动
+## 启动
 - 1、需要在vscode中的终端切换git终端才能执行成功（如下面的“开发步骤”所提示）
 - 2、执行 npm run start/pnpm run start/yarn run start
 - 3、根据终端提示上线箭头选择执行（如下面的“开发步骤”所提示）
 
-### dyMinCI.js文件使用命令
+## dyMinCI.js文件使用命令
 - dyminci package.json里面配置的命令行
 - version 要发布的版本号，成功后会对应抖音开放平台
 - appid 需要发布的小程序appid
@@ -31,7 +31,7 @@
 
 - 例如：yarn run dyminci version=1.0.1 appid=dyAPPID1 buildenv=production
 
-### wxMinCI.js文件使用命令
+## wxMinCI.js文件使用命令
 - wxminci package.json里面配置的命令行
 - version 要发布的版本号，成功后会对应微信公众平台
 - appid 需要发布的小程序appid
@@ -39,7 +39,7 @@
 
 - 例如：yarn run wxminci  version=1.0.1 appid=wxAPPID1 buildenv=production
 
-### 开发步骤
+## 开发步骤
 ![图片](./readme_img/第一步.png)
 ![图片](./readme_img/第二步.png)
 ![图片](./readme_img/第三步.png)
@@ -50,7 +50,7 @@
 ![图片](./readme_img/第八步.png)
 ![图片](./readme_img/第九步.png)
 
-### 结构
+## 结构
 
     toc-weapp 
     ├── dist 构建后才会出现
